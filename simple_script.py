@@ -1,3 +1,1 @@
-print("Running simple script")
-print("...")
-
+raise ValueError("this sucks")
