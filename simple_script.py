@@ -1,0 +1,2 @@
+print("Running simple script")
+
