@@ -9,4 +9,5 @@ install:
 # command to run tests
 script:
 #  - python -m unittest
+#   - 'if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then bash ./travis/run_on_non_pull_requests; fi'
   - python changelog_test.py $TRAVIS_PULL_REQUEST_BRANCH $TRAVIS_BRANCH
