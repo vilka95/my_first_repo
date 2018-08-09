@@ -5,7 +5,8 @@ cache: pip
 # command to install dependencies
 install:
   - pip install -r app/requirements.txt
+  - pip install -r build_requirements.txt
 # command to run tests
 script:
 #  - python -m unittest
-  - python simple_script.py
+  - python changelog_test.py $TRAVIS_PULL_REQUEST_BRANCH $TRAVIS_BRANCH
